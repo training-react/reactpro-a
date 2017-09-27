@@ -24,7 +24,7 @@ const save = (data) => {
             data)
             .then((r) => {
                 
-                return dispatch({
+                dispatch({
                     "type": CATEGORIA_ADD,
                     data: r.data
                 })
@@ -35,7 +35,7 @@ const save = (data) => {
             })
             .catch( (error) =>{
                 console.log(error)
-                return Promise.error()
+                //return Promise
             })
     }
 }
